@@ -1,0 +1,393 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+.Front{
+    background-image: url(/AXEGYM/Images/hero-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navbar{
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.navbar-items{
+    display: flex;
+    gap: 50px;
+    margin-right: 60px;
+    font-size: 15px;
+    padding: 15px;
+    font-weight: 500;
+}
+.navbar-items a{
+    color: white;
+    text-decoration:none;
+    padding: 5px;
+}   
+.nav-item-active a {
+    border-bottom: 3px solid rgb(255, 58, 105);
+    border-radius: 3px;
+}
+.navbar-items a:hover{
+    border-bottom: 3px solid  rgb(255, 58, 105);
+    border-radius: 3px;
+}
+
+
+.Intro-Section{
+    text-align: center;
+    margin: 100px auto;
+    color: white;
+}
+
+.intro-header{
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.intro-text{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    width: 800px;
+    margin: auto;
+    text-transform: capitalize;
+}
+.intro-button button{
+    background-color: rgba(255, 58, 104, 0);
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 1px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+
+
+
+.why-section{
+    background-image: url(/AXEGYM/Images/us-bg.jpg);
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    justify-content: center;    
+    height: fit-content;
+    
+}
+
+.why-section .heading{
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+    width: 300px;
+    margin: 100px auto 0px auto;
+    display: inline-block;
+    margin-bottom: 5px;
+    
+}
+.why-section .heading ::after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 6px;
+    background-color: rgb(255, 58, 105);
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+.why-section .Row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px  0px 0px;
+    color: black;
+    padding: 0px 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.why-section .card{
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+}
+.card img{
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.card h5{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+.Healthy{
+    background-image: url(/AXEGYM/Images/healthy-bg.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+    align-items: center;    
+    height: 500px;
+}
+.Healthy .head{
+    margin-top: -200px;
+    text-align: center;
+    color: white;
+    width: 500px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.Healthy .tx{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    width: fit-content;
+    text-transform: capitalize;
+    color: white;
+}
+
+
+
+
+
+.Trainers-section{
+    background-image: url(/AXEGYM/Images/trainer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    height: 700px;
+    
+}
+.Trainers-section .heading{
+    text-align: center;
+    font-size: larger;
+    margin: 50px auto;
+    color: white;
+}
+.Trainers-section .Row{
+    display: flex;
+    text-transform: capitalize;    
+}
+.Tr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    width: 300px;
+    height: 400px;
+    margin: 30px auto;
+    color: white;
+    font-size: 27px;
+}
+
+.Tr-img img {
+    border-radius: 50px;
+    padding: 20px;
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+}
+.Tr-img img:hover{
+    transform: scale(1.1);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.Contact-section{
+    background-image: url(/AXEGYM/Images/healthy-bg.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;    
+    padding-top: 50px;
+    height: 650px;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.Contact-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+    z-index: 1;
+}
+
+.Contact-section .heading{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 50px 60px;
+    color: white;
+    text-transform:uppercase;
+    z-index: 2;
+}
+.Contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0);
+    margin: 50px 200px;
+    color: white;
+    z-index: 2;
+}
+
+.Contact-form input{
+    width: 400px;
+    padding: 10px;
+    margin: 10px 0px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #2e2e2e00;
+    border: none;
+    border-bottom: 1px solid rgba(223, 222, 222, 0.582);   
+    color: white;
+    outline: none;
+    z-index: 2;
+}
+.message-send{
+    margin-top: 50px;
+}
+
+.message-button{
+    margin-left: 195px;
+}
+
+.message-button button{
+    background-color: rgba(255, 58, 104, 0);
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.imag{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+.imag img{
+    width:  180px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    image-resolution: from-image;
+    z-index: 2;
+}
+.imag img:hover{
+    transform: scale(1.7);
+    z-index: 1000;    
+    transition: all 0.3s ease-in-out;
+}
+
+.Contact-section span{
+    border-bottom: px solid  rgb(255, 58, 105);
+}
+
+
+
+
+
+.slider {
+  width: 100%;
+  max-width: fit-content;
+  background: transparent;
+  background-size: cover;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 9s infinite;
+}
+
+.slides img {
+  width:1000px;
+  height: 500px;
+  object-fit: cover;
+  margin: 0 5px;
+  border-radius: 10px;
+
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  25%  { transform: translateX(-100%); }
+  50%  { transform: translateX(-50%); }
+}
+
+@keyframes slideIn{
+
+}
