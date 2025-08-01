@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AXEGYM</title>
     <link rel="stylesheet" href="Main.css"/>
+    <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.css">
   </head>
   <body>
     <div class="Front">
@@ -106,47 +107,34 @@
     </div>
 
 
-    <div class="Trainers-section" id="trainers">
-      <div class="heading">
-        <h1>OUR TRAINERS</h1>
-      </div>
-      <div class="Row">
-        <div class="Tr">
-          <div class="Tr-detail">
-              <h5>JAMES SMITH</h5>
-          </div>
-            <div class="Tr-img">
-                <img src="/AXEGYM/Images/t1.jpg" alt="">
-            </div>
+    <div class="carousel slide" id="slide">
+      <ol class="carousel-indicators">
+       <li data-target="#slide" data-slide-to="0" class="active"></li> 
+       <li data-target="#slide" data-slide-to="1" ></li> 
+       <li data-target="#slide" data-slide-to="2" ></li> 
+       <li data-target="#slide" data-slide-to="3" ></li> 
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <img src="/AXEGYM/Images/pexels-leonardho-1552252.jpg" alt="">
         </div>
-        <div class="Tr">
-          <div class="Tr-detail">
-              <h5>JOHN DOE</h5>
-          </div>
-            <div class="Tr-img">
-                <img src="/AXEGYM/Images/t2 (2).jpg" alt="">
-            </div>
+        <div class="carousel-item active">
+          <img src="/AXEGYM/Images/ambitious-studio-rick-barrett-w7jYaN7GqyA-unsplash.jpg" alt="">
         </div>
-        <div class="Tr">
-          <div class="Tr-detail">
-              <h5>ALEX DOE</h5>
-          </div>
-            <div class="Tr-img">
-                <img src="/AXEGYM/Images/t3.jpg" alt="">
-            </div>
+        <div class="carousel-item">
+          <img src="/AXEGYM/Images/risen-wang-20jX9b35r_M-unsplash.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="/AXEGYM/Images/rodrigo-s-2mz9IKab7DE-unsplash.jpg" alt="">
         </div>
       </div>
-    </div>
+      <a href="#slide" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      <a href="#slide" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
 
-
-
-    <div class="slider">
-      <div class="slides">
-        <img src="/AXEGYM/Images/risen-wang-20jX9b35r_M-unsplash.jpg" alt="Image 1" />
-        <img src="/AXEGYM/Images/rodrigo-s-2mz9IKab7DE-unsplash.jpg" alt="Image 2" />
-        <img src="/AXEGYM/Images/ambitious-studio-rick-barrett-w7jYaN7GqyA-unsplash.jpg" alt="Image 3" />
-        <img src="/AXEGYM/Images/dimas-aji-kresnanto-eyp0RajT_5k-unsplash.jpg" alt="Image 3" />
-      </div>
     </div>
 
 
@@ -185,6 +173,8 @@
         
       </div>      
     </div>
+    <script src="/bootstrap-4.4.1-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
     <script src="JS.js"></script>
   </body>
 </html>

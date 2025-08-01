@@ -61,6 +61,7 @@ html{
     text-align: center;
     margin: 100px auto;
     color: white;
+    height: 100vh;
 }
 
 .intro-header{
@@ -97,52 +98,46 @@ html{
     display: flex;
     flex-direction: column;
     background-attachment: fixed;
-    justify-content: center;    
-    height: fit-content;
-    
+    justify-content: space-around;    
+    height: 90vh;
+    align-items: center;
 }
 
 .why-section .heading{
     text-align: center;
-    margin-top: 70px;
     color: white;
-    width: 300px;
-    margin: 100px auto 0px auto;
     display: inline-block;
     margin-bottom: 5px;
+    width: 30%;
     
 }
 .why-section .heading ::after{
     content: "";
     display: block;
-    width: 90px;
     height: 6px;
     background-color: rgb(255, 58, 105);
-    margin-top: 5px;
-    margin-left: 100px;
 }
 
 .why-section .Row{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin: 20px 0px  0px 0px;
     color: black;
-    padding: 0px 100px;
     text-align: center;
     font-size: 20px;
     font-weight: 500;
     text-transform: capitalize;
+    width: 100%;
+    padding: 20px;
 }
 .why-section .card{
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
-    height: 400px;
-    margin: 30px;
+    width: 20%;
+    height: 100%;
 }
 .card img{
-    height: auto;
+    height: 60%;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -200,42 +195,6 @@ html{
     justify-content: center;    
     height: 700px;
     
-}
-.Trainers-section .heading{
-    text-align: center;
-    font-size: larger;
-    margin: 50px auto;
-    color: white;
-}
-.Trainers-section .Row{
-    display: flex;
-    text-transform: capitalize;    
-}
-.Tr{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: 500;
-    width: 300px;
-    height: 400px;
-    margin: 30px auto;
-    color: white;
-    font-size: 27px;
-}
-
-.Tr-img img {
-    border-radius: 50px;
-    padding: 20px;
-    width: 350px;
-    height: 400px;
-    margin: 20px;
-}
-.Tr-img img:hover{
-    transform: scale(1.1);
-    z-index: 1000;
-    transition: all 0.3s ease-in-out;
 }
 
 
@@ -354,40 +313,36 @@ html{
 
 
 
-
-
-.slider {
-  width: 100%;
-  max-width: fit-content;
-  background: transparent;
-  background-size: cover;
-  border-radius: 10px;
-  margin: auto;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+.carousel {
+    background-image: url(/AXEGYM/Images/us-bg.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
 }
 
-.slides {
-  display: flex;
-  width: 100%;
-  animation: slide 9s infinite;
+.carousel-inner {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    
 }
 
-.slides img {
-  width:1000px;
-  height: 500px;
-  object-fit: cover;
-  margin: 0 5px;
-  border-radius: 10px;
-
+.carousel-item {
+padding: 50px;
+height: 100%;
+text-align: center;
+}
+.carousel-inner img {    
+    width: 70%;
+    box-shadow: 10px 20px 12px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    border-radius: 10px;
 }
 
-@keyframes slide {
-  0%   { transform: translateX(0%); }
-  25%  { transform: translateX(-100%); }
-  50%  { transform: translateX(-50%); }
+.carousel-item img:hover{
+    transform: scale(1.1);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
 }
 
-@keyframes slideIn{
-
-}
