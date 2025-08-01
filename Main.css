@@ -2,10 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-    font-family: "Cal Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
 }
 html{
     scroll-behavior: smooth;
@@ -89,6 +85,56 @@ html{
     cursor: pointer;
     margin-top: 30px;
 }
+
+
+
+.Trainers-section{
+
+    background-image: url(/AXEGYM/Images/trainer-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+    color: white;
+    font-weight: 700;
+}
+.Trainers-section .heading ::after{
+    content: "";
+    display: block;
+    height: 6px;
+    background-color: rgb(255, 58, 105);
+    width: 100px;
+    margin: 1px auto;
+}
+
+
+.Trainers-section .description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 70%;
+}
+.t-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 26%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.t-card img{
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 8px 10px 13px rgba(0, 0, 0, 0.5);
+}
+
 
 
 
@@ -184,27 +230,13 @@ html{
 
 
 
-.Trainers-section{
-    background-image: url(/AXEGYM/Images/trainer-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-    height: 700px;
-    
-}
-
-
 
 
 .Contact-section{
-    background-image: url(/AXEGYM/Images/healthy-bg.jpg); 
-    background-size: cover;
+    background-image: url(/AXEGYM/Images/us-bg.jpg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -314,14 +346,14 @@ html{
 
 
 .carousel {
-    background-image: url(/AXEGYM/Images/us-bg.jpg);
+    background-image: url(/AXEGYM/Images/healthy-bg.jpg);
     background-attachment: fixed;
     width: 100%;
     height: 80vh;
 }
 
 .carousel-inner {
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
     width: 100%;
     text-align: center;
     height: 100%;
@@ -329,9 +361,9 @@ html{
 }
 
 .carousel-item {
-padding: 50px;
-height: 100%;
-text-align: center;
+    padding: 50px;
+    height: 100%;
+    text-align: center;
 }
 .carousel-inner img {    
     width: 70%;
